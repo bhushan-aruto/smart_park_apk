@@ -1,0 +1,48 @@
+name: smart_park_assist
+description: "A new Flutter project."
+publish_to: 'none'  # Uncomment this line if you wish to keep the package private.
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  video_player: ^2.3.0  # Ensure this is the correct version
+  cupertino_icons: ^1.0.8
+  intl: ^0.20.0  # Add the intl package for date and time formatting
+  http: ^1.2.2
+  shared_preferences: ^2.0.15  # Ensure this is the latest version
+  mqtt_client: ^10.5.1
+  logger: ^2.5.0
+  uuid: ^3.0.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/
+    - images/videos/  # Ensure this directory exists and contains your video file
+
+  # The following section is for adding custom fonts (if needed)
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
