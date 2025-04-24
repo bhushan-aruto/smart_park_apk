@@ -68,7 +68,7 @@ class _SlotPageState extends State<SlotPage> {
       String email, int arrivalTime, int slotIndex) async {
     print("Sending booking request...");
     final uri = Uri.parse(
-        "https://smart-parking-system-http-server.onrender.com/user/book");
+        "http://35.244.43.79:8080/user/book");
     final payload = {"email": email, "arrive_time": arrivalTime};
 
     try {

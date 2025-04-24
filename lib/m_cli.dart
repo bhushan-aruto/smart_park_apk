@@ -7,7 +7,7 @@ class MqttClientManager {
 
   Future<void> initilizeMqtt(String subscribeTopic, String clientId) async {
     client =
-        MqttServerClient.withPort("skfplc.mqtt.vsensetech.in", clientId, 1883);
+        MqttServerClient.withPort("35.244.43.79", clientId, 1883);
     client!.keepAlivePeriod = 60;
     client!.onConnected = onConnected;
     client!.onDisconnected = onDisconnected;
